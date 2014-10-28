@@ -15,9 +15,12 @@
 	//select the database to find existance
 
 	if(!$exists){
-		echo "Database doesn't exist";
+		$query = $connection->query("CREATE DATABASE $database");
+		if($query){
+			echo "Succesfully created database " . $database;
+		}
 	}
-	//does database exist?
+	//afer creation, does database exist?
 
 	$connection->close();
 	//closes the connection on line 6
