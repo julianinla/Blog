@@ -20,7 +20,11 @@
 			echo "Succesfully created database " . $database;
 		}
 	}
+	else {
+		echo "Database already exists";
+	}
 	//afer creation, does database exist?
+	//lets us know yes or no
 
 	$connection->close();
 	//closes the connection on line 6
