@@ -5,6 +5,7 @@
 
 	$connection = new mysqli($host, $username, $password);
 	//gets the required variables
+	//represents connection
 
 	if ($connection->connect_error) {
     	die("Error: " . $connection->connect_error);
@@ -17,11 +18,11 @@
 	if(!$exists){
 		$query = $connection->query("CREATE DATABASE $database");
 		if($query){
-			echo "Succesfully created database " . $database;
+			echo "<p>Succesfully created database " . $database . "</p>";
 		}
 	}
 	else {
-		echo "Database already exists";
+		echo "<p>Database already exists</p>";
 	}
 	//afer creation, does database exist?
 	//lets us know yes or no
@@ -33,6 +34,15 @@
 			. "PRIMARY KEY (id))"); //created primary key?
 	//used dfor creating table
 	//identifies info for blog posts
+
+	if($query){
+		echo "<p>Successfully created table: posts</p>";
+	}
+	else {
+		echo "<p>$connection->error</p>";
+	}
+	//check if query exists, echo message
+	//else give different message
 
 	$connection->close();
 	//closes the connection on line 6
