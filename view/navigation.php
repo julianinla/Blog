@@ -1,7 +1,15 @@
+<?php
+	require_once(__DIR__ . "/../model/config.php");
+	//accesses $path in config.php
+?>
+
 <nav>
 	<ul>
-		<li><a href="../post.php">Blog Post Form</a></li>
+		<li><a href="<?php echo $path . "post.php" ?>">Blog Post Form</a></li>
 		<!-- nav to post.php
-			 .. to get out of folder -->
+			 .. to get out of folder 
+			 nvm get rid of dots for new path 
+			 php tags echoing code from php 
+			 paths for use when changing folder name-->
 	</ul>
-</nav>
+</nav> 
