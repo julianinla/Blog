@@ -7,4 +7,4 @@
 	</head>
 	<body>
 <!-- header html code
-     wear we put in our links
+     wear we put in our links -->
