@@ -1,5 +1,5 @@
 	
 	</body>
 </html>
-<!-- footer html code
+	<!-- footer html code
 	 used for adding any scripts to webpage --> 

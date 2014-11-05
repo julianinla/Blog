@@ -1,3 +1,7 @@
+<?php
+	require_once(__DIR__ . "/../model/config.php");
+	//accesses $path in config.phpso we have earsier directory naming
+?>
 
 <html>
 	<head>
@@ -6,5 +10,6 @@
 		</title>
 	</head>
 	<body>
-<!-- header html code
+	<!-- header html code
      wear we put in our links -->
+     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/main.css" ?>">
