@@ -14,4 +14,8 @@
 		<textarea name="post"></textarea>
 		<!-- text area bigger text box than -->
 	</div>
+	<div>
+		<button type="submit">Submit</button>
+		<!-- button to subit our blog posts -->
+	</div>
 </form>

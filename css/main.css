@@ -1,6 +1,14 @@
 /* Styles for PHP Blog */
 
-input {
+body {
 	background-color: red;
 }
-/* random style for right now */
+
+input {
+	background-color: blue;
+}
+
+h1 {
+	background-color: white;
+}
+/* random styles for right now */
