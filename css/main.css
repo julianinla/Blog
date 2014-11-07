@@ -1,14 +1,18 @@
 /* Styles for PHP Blog */
 
-body {
-	background-color: red;
+div {
+	margin: 0px 200px 0px 200px;
+	padding: 30px 60px 30px 50px;
 }
 
 input {
-	background-color: blue;
+	margin: 0px 200px 0px 200px;
+	padding: 5px 347px 5px 344px;
+
 }
 
-h1 {
-	background-color: white;
+textarea {
+	margin: 0px 200px 0px 200px;
+	padding: 30px 350px 30px 350px;
 }
 /* random styles for right now */
