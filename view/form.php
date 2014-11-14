@@ -1,7 +1,14 @@
-<h1 align="center">Create Blog Post</h1>
-<!-- at top text says this^-->
+<?php
 
-<form>
+	require_once(__DIR__ . "/../model/config.php");
+
+?>
+
+<h1 align="center">Create Blog Post</h1>
+<!-- at top text says this^ -->
+
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+<!-- allowing post to be created in form by connecting via path -->
 	<div>
 		<label for="title" class="sr-only">Title</label>
 		<!-- gives first text box title -->
