@@ -12,7 +12,16 @@
 	//santizes and stops hacking our blog for most part
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
-	echo "<p>Title: $title </p>";
-	//echos text typed into the title for blog posts
-	echo "<p>Post: $post </p>";
-	//echos text typed into the title for blog posts
+	$query = $connection->query("INSERT INFO posts SET title = '$title', post = '$post'");
+	//creating query for information for the database
+
+	if($query) {
+		echo "<p>Successfully inserted post: $title</p>"
+	}
+	else {
+		echo "<p>$connection->error</p>"
+	}
+	//letting us now if creating query was successful
+
+	$connection->close();
+	//close the connection 
