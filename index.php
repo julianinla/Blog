@@ -1,6 +1,5 @@
 	
 	<?php 
-		//php html does not work!
 		//not html file
 
 		require_once(__DIR__ . "/view/header.php");
