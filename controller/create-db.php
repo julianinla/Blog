@@ -4,7 +4,7 @@
 	//used for linking to model
 
 	$connection = new mysqli($host, $username, $password);
-	//gets the required variables
+	//creates the required mysqli objects
 	//represents connection
 
 	if ($connection->connect_error) {
