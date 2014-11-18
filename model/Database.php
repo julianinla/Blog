@@ -26,16 +26,22 @@
 		//construct function to be accessed for new obj creation
 
 		public function openConnection() {
-
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database) 
+			//create new mysqli object 
+			
+			if ($this->connection->connect_error) {
+    			die("Error: " . $connection->connect_error); //if statement to inform us whether the code works
+			}
 		}
 		//to replace opening connection
+		//opens new object, checks if it works, closes function if fails
 
 		public function closeConnection() {
 			
 		}
 		//to replace closing connection
 
-		public function query($string) /* passing through string for query */ {
+		public function query($string) /* passing through tstring for query */ {
 			
 		}
 		//to replace query code
