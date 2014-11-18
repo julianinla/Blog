@@ -37,7 +37,11 @@
 		//opens new object, checks if it works, closes function if fails
 
 		public function closeConnection() {
-			
+			if(isset($this->connection)){
+				$this->connection->close(); //closes the connection
+			} 
+			//checks whether variable set/not
+			//whether or not something in variable
 		}
 		//to replace closing connection
 
