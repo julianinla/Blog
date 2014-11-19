@@ -37,7 +37,7 @@
 		//opens new object, checks if it works, closes function if fails
 
 		public function closeConnection() {
-			if(isset($this->connection)){
+			if(isset($this->connection)) {
 				$this->connection->close(); //closes the connection
 			} 
 			//checks whether variable set/not
@@ -46,7 +46,17 @@
 		//to replace closing connection
 
 		public function query($string) /* passing through tstring for query */ {
-			
+			$this->openConnection(); 
+			//code to execute openConnection()
+
+			$query = $this->connection->query($string); //accessing query function
+			//creating/assigning to query
+
+			$this->closeConnection();
+			//closing connection using closeConnection()
+
+			return $query;
+			//returning the result
 		}
 		//to replace query code
 	}
