@@ -13,6 +13,7 @@
 		private $username;
 		private $password;
 		private $database;
+		public $error;
 		//initiliazing variables similar to above
 		//all are private 
 
@@ -22,15 +23,40 @@
 			$this->password = $password;
 			$this->database = $database;
 			//accesses the host variable
+
+			$this->connection = new mysqli($host, $username, $password);
+			//creates the required mysqli objects
+			//represents connection
+
+			if ($this->connection->connect_error) {
+    			die("Error: " . $connection->connect_error);
+			}
+			//if statement to inform us whether the code works
+
+			$exists = $this->connection->select_db($database);
+			//select the database to find existance
+
+			if(!$exists){
+				$query = $this->connection->query("CREATE DATABASE $database");
+				if($query){
+					echo "<p>Succesfully created database " . $database . "</p>";
+				}
+			}
+			else {
+				echo "<p>Database already exists</p>";
+			}
+			//afer creation, does database exist?
+			//lets us know yes or no
 		}
 		//construct function to be accessed for new obj creation
 
 		public function openConnection() {
-			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database) 
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database); 
 			//create new mysqli object 
 			
-			if ($this->connection->connect_error) {
-    			die("Error: " . $connection->connect_error); //if statement to inform us whether the code works
+			if($this->connection->connect_error) {
+    			die("Error: " . $this->connection->connect_error); 
+    			//if statement to inform us whether the code works
 			}
 		}
 		//to replace opening connection
@@ -51,6 +77,11 @@
 
 			$query = $this->connection->query($string); //accessing query function
 			//creating/assigning to query
+
+			if(!$query) {
+				$this->error = $this->connection->error;
+			}
+			//check whether query is true/false
 
 			$this->closeConnection();
 			//closing connection using closeConnection()
