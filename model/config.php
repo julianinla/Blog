@@ -15,7 +15,7 @@
 	$database = "blog_db"; //database variable
 	//initalizing required variables for database
 
-	if(isset($_SESSION["connection"])) { /* want to determine if var has value */
+	if(!isset($_SESSION["connection"])) { /* want to determine if var has value */
 		//need to create new database object based on class
 		$connection = new Database($host, $username, $password, $database);
 		//passing variables

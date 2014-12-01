@@ -13,6 +13,7 @@
 	<!-- header html code
     wear we put in our links -->
     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/main.css" ?>"> 
+    <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/test.css" ?>"> 
     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/bootstrap-theme.css" ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/bootstrap.css" ?>">
     <!-- links to main, bootstrap css files -->

@@ -3,7 +3,7 @@
 	require_once(__DIR__ . "/../model/config.php"); 
 	//used for linking to model
 
-	$query = $connection->query("CREATE TABLE posts (" //create table for posts
+	$query = $_SESSION["connection"]->query("CREATE TABLE posts (" //create table for posts
 			. "id int(11) NOT NULL AUTO_INCREMENT," //ids need info/auto increment
 			. "title varchar(255) NOT NULL," //title is needed
 			. "post text NOT NULL," //text needed
@@ -15,7 +15,7 @@
 		echo "<p>Successfully created table: posts</p>";
 	}
 	else {
-		echo "<p>$connection->error</p>";
+		echo "<p" . $_SESSION["connection"]->error . "</p>";
 	}
 	//check if query exists, echo message
 	//else give different message

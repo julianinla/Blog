@@ -22,7 +22,7 @@
 		<!-- text area bigger text box than -->
 	</div>
 	<div>
-		<button type="submit" class="btn btn-primary btn-block">Submit</button>
+		<button type="submit" class="btn btn-default btn-large">Submit</button>
 		<!-- button to subit our blog posts -->
 	</div>
 </form>
