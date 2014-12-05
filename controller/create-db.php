@@ -30,6 +30,7 @@
 			. "email varchar(50) NOT NULL," //output for email, 50 characters
 			. "password char(128) NOT NULL," //output for password, 128 characters
 			. "salt char(128) NOT NULL," //salt? for security for website
+			. "DateTime datetime NOT NULL,"
 			. "PRIMARY KEY (id))" /* create primary key */);  
 	//used for creating table 
 	//stores created users
