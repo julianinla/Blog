@@ -1,4 +1,8 @@
-<form>
+<?php
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 
 	<div>
 		<label for="email">Email: </label>
