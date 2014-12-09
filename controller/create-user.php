@@ -16,4 +16,5 @@
 	//encryption
 	$salt = "$5$" . "rounds=5000$" . uniqid(nt_rand(), true) . "$";
 
-	$hashedPassword = crypt();
+	$hashedPassword = crypt($password, $salt);
+	echo $hashedPassword;
