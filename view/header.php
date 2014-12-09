@@ -15,4 +15,5 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/main.css" ?>"> 
     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/bootstrap-theme.css" ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/bootstrap.css" ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo $path . "/css/normalize.css" ?>">
     <!-- links to main, bootstrap css files -->

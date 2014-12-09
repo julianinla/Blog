@@ -1,8 +1,10 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
+	//requiring our config file
 ?>
 
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+<!-- pathing our form to create-post -->
 
 	<div>
 		<label for="email">Email: </label>
