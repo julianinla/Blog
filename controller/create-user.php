@@ -14,4 +14,6 @@
 	//sending profile info
 
 	//encryption
-	$salt = "$5$"
+	$salt = "$5$" . "rounds=5000$" . uniqid(nt_rand(), true) . "$";
+
+	$hashedPassword = crypt();
