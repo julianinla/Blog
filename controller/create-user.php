@@ -10,11 +10,22 @@
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 	//same things for our password
 
-	echo $email . " - " . $username . " - " . $password;
-	//sending profile info
-
 	//encryption
 	$salt = "$5$" . "rounds=5000$" . uniqid(nt_rand(), true) . "$";
 
 	$hashedPassword = crypt($password, $salt);
-	echo $hashedPassword;
+	//encrypting the password/salt
+
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET"
+	. "email = '$email',"
+	. "username = '$username'," 
+	. "password = '$hashedPassword',"
+	. "salt = '$salt'");
+	//connection as we have done
+
+	if($query){
+		echo "Successfully created user: username";
+	}
+	else {
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
