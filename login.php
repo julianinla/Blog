@@ -7,4 +7,4 @@
 	//similar to index, make footer usable
 
 	require_once(__DIR__ . "/view/login-form.php");
-	//require form for the use of logging in 
+	//require form for the use of logging in
