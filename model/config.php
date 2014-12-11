@@ -4,6 +4,7 @@
 	//require once for database
 	session_start();
 	//use for session var $connection
+	session_regenerate_id(true);
 
 	$path = "/Blog/";
 	//used for fixing path for future changes
