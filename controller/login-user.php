@@ -7,3 +7,4 @@
 	//need to filter input for login
 
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
+	//retireving information required for login from our database
