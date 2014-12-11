@@ -8,3 +8,17 @@
 
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
 	//retireving information required for login from our database
+
+	if($query->num_rows == 1){
+		$row = $query->fetch_array();
+
+		if($row["password"] ==+ crypt($password, $row["salt"])){
+			echo "<p>Login Successful! :)</p>";
+		}
+		else {
+			echo "Invalid username or password :(";
+		}
+	}
+	else {
+		echo "Invalid username or password :(";
+	}
