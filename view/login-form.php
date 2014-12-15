@@ -3,7 +3,7 @@
 	//requiring our config file
 ?>
 
-<h1>Login</h1>
+<h1 align="center">Login</h1>
 
 <form method="post" action="<?php echo $path . "controller/login-user.php"?>">
 	<div>
@@ -25,7 +25,7 @@
 	</div>
 
 	<div>
-		<button type="submit" class="btn btn-default btn-large">Register</button>
-		<!-- button to subit for registration -->
+		<button type="submit" class="btn btn-default btn-large">Login</button>
+		<!-- button to subit for login -->
 	</div>
 </form>

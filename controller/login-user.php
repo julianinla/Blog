@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . /../model/config.php);
+	require_once(__DIR__ . "/../model/config.php");
 	//need to config file
 
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);

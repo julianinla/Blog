@@ -18,5 +18,40 @@ textarea {
 
 /* styles for our creating blog posts */
 
+.title {
+	color: black;
+	display: inline-block;
+	padding: 10px 400px 10px 20px;
+	font-family: 'Play', sans-serif;
+	font-size: 25px;
+}
 
+.links {
+	text-decoration: none;
+	color: black;
+	text-align: right;
+	display:inline-block;
+	padding: 10px 45px 10px 30px;
+	font-family: 'Play', sans-serif;
+}
+
+a {text-decoration: none;}
+a:hover {text-decoration: none;}  
+
+.links:hover {
+	color: #FF0040;
+}
+
+.inline {
+	display: inline-block;
+}
+
+#head {
+	border-bottom: 1px solid black;
+	font-family: 'Play', sans-serif;
+}
+
+#bodyback {
+	background-color: white;
+}
 
