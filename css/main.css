@@ -35,6 +35,11 @@ textarea {
 	font-family: 'Play', sans-serif;
 }
 
+#mainlink {
+	text-decoration: none;
+	font-color: black;
+}
+
 a {text-decoration: none;}
 a:hover {text-decoration: none;}  
 
@@ -55,3 +60,6 @@ a:hover {text-decoration: none;}
 	background-color: white;
 }
 
+.readmore-js-section {
+	overflow: hidden;
+}

@@ -20,7 +20,7 @@
     <!-- links to main, bootstrap css files -->
 
 
-	<header id='head head2'>
+	<header id='head'>
 		<h2 class="title">
 			<a href="<?php echo $path . "/index.php" ?>">
 				The Beat

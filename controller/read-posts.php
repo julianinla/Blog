@@ -1,7 +1,7 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
 
-	$query = "SELECT * FROM posts";
+	$query = "SELECT * FROM posts ORDER BY id DESC";
 	$result = $_SESSION["connection"]->query($query);
 
 	if($result){

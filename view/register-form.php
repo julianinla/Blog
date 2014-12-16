@@ -3,7 +3,9 @@
 	//requiring our config file
 ?>
 
-<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
+<h1> Register </h1>
+
+<form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
 <!-- pathing our form to create-post -->
 
 	<div>

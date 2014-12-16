@@ -11,12 +11,12 @@
 	//same things for our password
 
 	//encryption
-	$salt = "$5$" . "rounds=5000$" . uniqid(nt_rand(), true) . "$";
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
 	$hashedPassword = crypt($password, $salt);
 	//encrypting the password/salt
 
-	$query = $_SESSION["connection"]->query("INSERT INTO users SET"
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
 	. "email = '$email',"
 	. "username = '$username'," 
 	. "password = '$hashedPassword',"
@@ -24,7 +24,7 @@
 	//connection as we have done
 
 	if($query){
-		echo "Successfully created user: username";
+		echo "Successfully created user: $username";
 	}
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
