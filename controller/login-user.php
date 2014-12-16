@@ -14,6 +14,9 @@
 
 		if($row["password"] ==+ crypt($password, $row["salt"])){
 			$_SESSION["authenticated"] = true;
+			require_once(__DIR__ . "/../view/header.php");
+			//allows us to access the header code
+			echo "<br/> <br/> <br/> <br/> <br/> <br/>";
 			echo "<p>Login Successful! :)</p>";
 		}
 		else {

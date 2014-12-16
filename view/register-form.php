@@ -3,6 +3,7 @@
 	//requiring our config file
 ?>
 
+<br>
 <h1> Register </h1>
 
 <form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">

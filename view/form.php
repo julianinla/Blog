@@ -10,7 +10,7 @@
 	}
 
 ?>
-
+<br>
 <h1 align="center">Create Blog Post</h1>
 <!-- at top text says this^ -->
 

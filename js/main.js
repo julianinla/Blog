@@ -1,1 +1,1 @@
-$('article').readmore();
+$('.post').readmore();
