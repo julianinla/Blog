@@ -9,6 +9,7 @@
 			. "id int(11) NOT NULL AUTO_INCREMENT," //ids need info/auto increment
 			. "title varchar(255) NOT NULL," //title is needed
 			. "post text NOT NULL," //text needed
+			. "DateTime datetime NOT NULL," //store datetime
 			. "PRIMARY KEY (id))"); //created primary key?
 	//used dfor creating table
 	//identifies info for blog posts

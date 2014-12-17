@@ -9,8 +9,8 @@
 				echo "<br/>";
 			 	echo "<div class='post readmore-js-section readmore-js-collapsed'>";			 	
 			 	echo "<h2>" . $row['title'] . "</h2>";
-			 	// echo "Posted on " . $row['DateTime'];
-			 	echo "<br/>";
+			 	echo "Posted on " . $row['DateTime'];
+			 	echo "<br/> <br/>";
 			 	echo "<p>" . $row['post'] . "</h1>";
 			 	echo "<br/>";
 			 	// echo "<img src=get.php?id=" . $row['id'] . "/>";
