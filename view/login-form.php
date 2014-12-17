@@ -3,7 +3,7 @@
 	//requiring our config file
 ?>
 
-<br>
+<br> <br> <br> <br> <br> <br>
 <h1 align="center">Login</h1>
 
 <form method="post" action="<?php echo $path . "controller/login-user.php"?>">
@@ -26,12 +26,12 @@
 	</div>
 
 	<div>
-		<button type="submit" class="btn btn-default btn-large">Login</button>
+		<button type="submit" class="btn btn-default btn-large inline">Login</button>
 		<!-- button to subit for login -->
 	</div>
 
 	<div>
-		<button href="/../register.php" class="btn btn-default btn-large">Register Here</button>
+		<a href="register.php" class="btn btn-default btn-large inline">Register Here</a>
 		<!-- button to subit for login -->
 	</div>
 </form>

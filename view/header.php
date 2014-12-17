@@ -21,12 +21,21 @@
 
 
 	<header id='head'>
-		<h2 class="title">
-			<a href="<?php echo $path . "/index.php" ?>">
+		<h2 class="title inline">
+			<a href="<?php echo $path . "/index.php" ?>" id="mainlink">
 				The Beat
 			</a>
 		</h2>
 		<section class="inline">
-			<a href="<?php echo $path . "login.php" ?>" rel="" class="links nav"> Profile </a>
+			<div class="dropdown">
+			  <button id="dLabel" class="links inline" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+			    Profile
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			    <a href="<?php echo $path . "/login.php" ?>"> Login </a>
+			    <a href="<?php echo $path . "/register.php" ?>"> Register </a>
+			  </ul>
+			</div>
 		</section>
 	</header>
