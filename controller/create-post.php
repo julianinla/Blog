@@ -19,7 +19,7 @@
 
 	if($query) {
 		echo "<p>Successfully inserted post: $title</p>"; //echos if successful
-		echo "Posted on " . $date->format("M. D., Y") . " at " . $time->format("g:i");
+		echo "Posted on " . $date->format("Y-m-d") . " @ " . $time->format("g:i");
 	}
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>"; //echos if unsuccessful
