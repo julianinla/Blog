@@ -1,6 +1,8 @@
-$('.readmpre-js-section').readmore({
-	moreLink: '<a href="#">Read more</a>',
-	maxHeight: 1
-});
+// $('article').readmore();
 
 $('.dropdown-toggle').dropdown()
+
+window.onload=function{
+	var audio = new Audio('/../resources/clublife.mp3');
+	audio.play();
+};

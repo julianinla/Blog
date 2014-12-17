@@ -26,12 +26,12 @@
 	</div>
 
 	<div>
-		<button type="submit" class="btn btn-default btn-large inline">Login</button>
+		<button type="submit" class="btn btn-default center">Login</button>
 		<!-- button to subit for login -->
 	</div>
 
 	<div>
-		<a href="register.php" class="btn btn-default btn-large inline">Register Here</a>
+		<a href="register.php" class="btn btn-default inline center2">Register Here</a>
 		<!-- button to subit for login -->
 	</div>
 </form>

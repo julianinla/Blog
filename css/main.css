@@ -69,3 +69,11 @@ a:hover {text-decoration: none;}
 .readmore-js-section {
 	overflow: hidden;
 }
+
+.center {
+	margin: 0px 0px 0px 400px;
+}
+
+.center2 {
+	margin: 0px 0px 0px 375px;
+}

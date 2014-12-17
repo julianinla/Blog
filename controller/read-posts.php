@@ -7,8 +7,9 @@
 	if($result){
 		while ($row = mysqli_fetch_array($result)) {
 				echo "<br/>";
-			 	echo "<div class='post readmore-js-section'>";
+			 	echo "<div class='post readmore-js-section readmore-js-collapsed'>";			 	
 			 	echo "<h2>" . $row['title'] . "</h2>";
+			 	// echo "Posted on " . $row['DateTime'];
 			 	echo "<br/>";
 			 	echo "<p>" . $row['post'] . "</h1>";
 			 	echo "<br/>";

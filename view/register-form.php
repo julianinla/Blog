@@ -3,8 +3,8 @@
 	//requiring our config file
 ?>
 
-<br>
-<h1> Register </h1>
+<br> <br> <br> <br> <br> <br>
+<h1 align="center"> Register </h1>
 
 <form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
 <!-- pathing our form to create-post -->
@@ -28,7 +28,7 @@
 	</div>
 
 	<div>
-		<button type="submit" class="btn btn-default btn-large">Register</button>
+		<button type="submit" class="btn btn-default center">Register</button>
 		<!-- button to subit for registration -->
 	</div>
 	
