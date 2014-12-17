@@ -27,15 +27,6 @@
 			</a>
 		</h2>
 		<section class="inline">
-			<div class="dropdown">
-			  <button id="dLabel" class="links inline" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-			    Profile
-			    <span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-			    <a href="<?php echo $path . "/login.php" ?>"> Login </a>
-			    <a href="<?php echo $path . "/register.php" ?>"> Register </a>
-			  </ul>
-			</div>
+			<a href="<?php echo $path . "login.php" ?>" rel="" class="links nav"> Profile </a>
 		</section>
 	</header>
